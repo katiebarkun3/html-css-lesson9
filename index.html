@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson9</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        .container {
+            border: 1px solid gray;
+            height: 500px;
+            display: flex;
+            flex-direction: row;/* изменение направления главной оси flex */
+            justify-content: space-around;/* center, flex-start, flex-end,
+                                    space-between, space-around,space-evenly */
+            align-items: center;/* flex-start, flex-end, center, stretch */
+            flex-wrap: wrap; /* разрешить перенос элементов */
+
+
+
+        }
+        .container>div {
+            height: 100px;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container>div:nth-child(1) {
+            background-color: rgb(255, 169, 169);
+        }
+        .container>div:nth-child(2) {
+            background-color: rgb(168, 255, 168);
+        }
+        .container>div:nth-child(3) {
+            background-color: rgb(157, 157, 255);
+            /* align-self: start; 
+               order: 4;*/
+        }
+        .container>div:nth-child(4) {
+            background-color: rgb(255, 255, 154);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+
+
+
+
+</body>
+</html>
